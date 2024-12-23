@@ -1,0 +1,72 @@
+/* Site Theme Colors */ 
+/*
+$color-grayish: mix($color-bg, black, 70%);
+$color-light-grayish: mix($color-bg, black, 90%);
+$color-dark-grayish: mix($color-bg, black, 50%);
+$color-hs-info: mix($color-bg, $info, 90%);
+*/
+$color-text: #FBF4EF;
+$color-subtext: #fbf4ef9d;
+$color-bg: #161b20;
+$color-accent: #FF6B35;
+$color-secondary: #0D21A1;
+$color-secondary-dark: #060F4B;
+
+//Header Font
+.poetsen-one-regular {
+    font-family: "Poetsen One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+$header-font-family: 'Poetsen One';
+$header-font-size: 26pt;
+
+//Body font
+.manuale-regular {
+    font-family: "Manuale", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+$body-font-family: 'Manuale';
+$body-font-size: 16pt;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
+    color: $color-text;
+}
+
+.site-header-title {
+    font-family: 'Bitter', serif;
+    font-size: 24pt;
+    color: $color-text;
+    transition: color 500ms;
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+body {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    color: $color-text;
+    background-color: $color-bg;
+}
+
+a {
+    color: $color-text;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-color: $color-subtext;
+    border-width: 1px;
+    transition: color 500ms;
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+.a-no-ul {
+    border-bottom-style: none;
+}

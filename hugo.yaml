@@ -2,3 +2,15 @@ baseURL: https://ejl.st/
 languageCode: en-us
 title: ejl.st
 theme: whippersnapper
+
+menus:
+  main:
+  - name: Home
+    pageref: /
+    weight: 10
+  - name: ZK
+    pageref: /zk
+    weight: 20
+  - name: About
+    pageref: /about
+    weight: 30

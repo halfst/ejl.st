@@ -1,7 +1,6 @@
-# Theme Name
+# Whippersnapper
+A lightweight, minimalist theme for Hugo.
 
 ## Features
-
-## Installation
-
-## Configuration
+- [ ] Support wikilinks
+- [ ] Algolia search

@@ -12,17 +12,17 @@ $color-accent: #FF6B35;
 $color-secondary: #0D21A1;
 $color-secondary-dark: #060F4B;
 
-//Header Font
+//theme Font
 .poetsen-one-regular {
     font-family: "Poetsen One", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-$header-font-family: 'Poetsen One';
-$header-font-size: 26pt;
+$theme-font-family: 'Poetsen One';
+$theme-font-size: 26pt;
 
-//Body font
+//Body & Header font
 .manuale-regular {
     font-family: "Manuale", serif;
     font-optical-sizing: auto;
@@ -31,21 +31,28 @@ $header-font-size: 26pt;
 }  
 
 $body-font-family: 'Manuale';
-$body-font-size: 16pt;
+$body-font-size: 12pt;
+$header-font-family: 'Manuale';
+$header-font-size: 18pt;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font-family;
+    font-size: $header-font-size;
     color: $color-text;
 }
 
 .site-header-title {
-    font-family: 'Bitter', serif;
-    font-size: 24pt;
+    font-family: $theme-font-family;
+    font-size: $theme-font-size;
     color: $color-text;
     transition: color 500ms;
     &:hover {
         color: $color-accent;
     }
+}
+
+.footer-copyright-text {
+    color: $color-subtext;
 }
 
 body {

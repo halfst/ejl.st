@@ -1,2 +1,13 @@
-<h1 class="site-header-title">{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="container">
+    <div class="row no-gutters align-items-center">
+        <div class="col col-md-auto p-0">
+            <i class="fa-solid fa-bomb site-header-title"></i>
+        </div>
+        <div class="col col-md-auto">
+            <h1 class="site-header-title">{{ site.Title }}</h1>
+        </div>
+        <div class="col col-md-auto">
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>    
+    </div>
+</div>

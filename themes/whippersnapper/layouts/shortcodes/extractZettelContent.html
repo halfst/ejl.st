@@ -1,0 +1,4 @@
+{{ $content := .Page.RawContent }}
+{{ $extracted := replaceRE "(?s).*## Content\\s*(.*?)\\s*## .*" "${1}" $content }}
+{{ $processed := markdownify $extracted }}
+{{ $processed }}

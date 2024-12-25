@@ -1,0 +1,6 @@
+{{ define "main" }}
+This is the ZK list page.
+{{ range .Pages }}
+<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+{{ end }}
+{{ end }}

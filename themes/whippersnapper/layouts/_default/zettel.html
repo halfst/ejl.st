@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<p><b>Created:</b> {{ .Params.createdDate }} <br>
+<b>Updated:</b> {{ .Params.modifiedDate }}</p>
+
+<!-- Extract content from zettel -->
+{{ $content := .RawContent }}
+{{ $extracted := replaceRE "(?s).*## Content\\s*(.*?)\\s*## .*" "${1}" $content }}
+{{ $processed := markdownify $extracted }}
+{{ $processed }}
+
+{{ end }}

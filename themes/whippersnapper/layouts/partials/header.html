@@ -4,7 +4,7 @@
             <i class="fa-solid fa-bomb site-header-title"></i>
         </div>
         <div class="col col-md-auto">
-            <h1 class="site-header-title">{{ site.Title }}</h1>
+            <h1 class="site-header-title"><a href="/" class="a-no-ul">{{ site.Title }}</a></h1>
         </div>
         <div class="col col-md-auto">
             {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

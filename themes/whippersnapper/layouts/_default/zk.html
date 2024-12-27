@@ -1,6 +1,17 @@
 {{ define "main" }}
 This is the ZK list page.
-{{ range .Pages }}
-<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-{{ end }}
+
+<div class="row row-cols-1 row-cols-md-4 g-4">  
+    {{ range .Pages }}
+        <div class="col">
+            <div class="card text-bg-dark h-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ .LinkTitle }}</h5>
+                    <a href="{{ .RelPermalink }}" class="btn btn-primary">View Card</a>
+                </div>
+            </div>
+        </div>  
+    {{ end }}        
+</div>
+
 {{ end }}

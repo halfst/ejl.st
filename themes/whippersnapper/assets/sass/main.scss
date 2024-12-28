@@ -29,9 +29,15 @@ $body-font-size: 12pt;
 $header-font-family: 'Manuale';
 $header-font-size: 18pt;
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: $header-font-family;
     font-size: $header-font-size;
+    color: $color-text;
+}
+
+h4, h5, h6 {
+    font-family: $header-font-family;
+    font-size: $header-font-size * 0.8;
     color: $color-text;
 }
 

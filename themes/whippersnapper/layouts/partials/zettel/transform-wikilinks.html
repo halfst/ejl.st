@@ -1,28 +1,40 @@
-{{ $wikiregexWithText := "\\[\\[([^\\]\\|\\r\\n]+?)\\|([^\\]\\|\\r\\n]+?)\\]\\]" }}
 {{ $wikiregex := "\\[\\[([^\\]\\|\\r\\n]+?)\\]\\]" }}
-
+{{ $wikiregexWithText := "\\[\\[([^\\]\\|\\r\\n]+?)\\|([^\\]\\|\\r\\n]+?)\\]\\]" }}
 {{ $page := .Page }}
 {{ $pageContent := .Content }}
-
-{{ range ($wikilinks := .Content | findRE $wikiregex) }}
-	{{ $link := . | replaceRE $wikiregex "$1" }}
-	{{ $wikilink :=  printf "\\[\\[%s\\]\\]" $link }}
-
-	{{ with relref $page $link }}
-		{{ $link := printf "%s%s%s%s%s" "<a href=\"" . "\">" ($.Site.GetPage $link).Title "</a>"  }}
-		{{ $pageContent = $pageContent | replaceRE $wikilink $link }}
-	{{ end }}
+{{ range ($pageContent | findRE $wikiregex) }}
+    {{ $link := . | replaceRE $wikiregex "$1" }}
+    {{ $wikilink := printf "\\[\\[%s\\]\\]" $link }}
+    {{ $resolvedLink := relref $page $link }}
+    {{ if $resolvedLink }}
+        {{ $linkedPage := $.Site.GetPage $link }} {{/* Changed from $resolvedLink to $link */}}
+        {{ $linkTitle := $link }} {{/* Default to the link text itself */}}
+        {{ if $linkedPage }}
+            {{ $linkTitle = $linkedPage.Title }}
+        {{ end }}
+        {{ $htmlLink := printf "<a href=\"%s\">%s</a>" $resolvedLink $linkTitle }}
+        {{ $pageContent = $pageContent | replaceRE $wikilink $htmlLink }}
+    {{ else }}
+        {{ $htmlLink := printf "<a href=\"#\">%s</a>" $link }}
+        {{ $pageContent = $pageContent | replaceRE $wikilink $htmlLink }}
+    {{ end }}
 {{ end }}
-
 {{ range ($pageContent | findRE $wikiregexWithText) }}
-	{{ $link := . | replaceRE $wikiregexWithText "$1" }}
-	{{ $text := . | replaceRE $wikiregexWithText "$2" }}
-	{{ $wikilink :=  printf "\\[\\[%s\\|%s\\]\\]" $link $text }}	
-
-	{{ with relref $page $link }}
-		{{ $link := printf "%s%s%s%s%s" "<a href=\"" . "\">" $text "</a>" }}
-		{{ $pageContent = $pageContent | replaceRE $wikilink $link }}
-	{{ end }}
+    {{ $link := . | replaceRE $wikiregexWithText "$1" }}
+    {{ $text := . | replaceRE $wikiregexWithText "$2" }}
+    {{ $wikilink := printf "\\[\\[%s\\|%s\\]\\]" $link $text }}
+    {{ $resolvedLink := relref $page $link }}
+    {{ if $resolvedLink }}
+        {{ $linkedPage := $.Site.GetPage $link }} {{/* Changed from $resolvedLink to $link */}}
+        {{ $linkTitle := $text }} {{/* Use the specified text as default */}}
+        {{ if $linkedPage }}
+            {{ $linkTitle = $linkedPage.Title }}
+        {{ end }}
+        {{ $htmlLink := printf "<a href=\"%s\">%s</a>" $resolvedLink $linkTitle }}
+        {{ $pageContent = $pageContent | replaceRE $wikilink $htmlLink }}
+    {{ else }}
+        {{ $htmlLink := printf "<a href=\"#\">%s</a>" $text }}
+        {{ $pageContent = $pageContent | replaceRE $wikilink $htmlLink }}
+    {{ end }}
 {{ end }}
-
 {{ $pageContent | safeHTML }}

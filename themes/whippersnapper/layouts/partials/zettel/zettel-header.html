@@ -1,6 +1,8 @@
 <h1>{{ .Title }}</h1>
 
 <p>
-    <b>Created:</b> {{ .Params.createdDate }} <br>
-    <b>Updated:</b> {{ .Params.modifiedDate }}
+    <b>Created:</b> {{ .Params.createdDate }} 
+    {{ if ne .Params.modifiedDate .Params.createdDate }}
+        | <b>Updated:</b> {{ .Params.modifiedDate }}
+    {{ end }}
 </p>

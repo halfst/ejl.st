@@ -1,0 +1,5 @@
+{{ $content := .RawContent }}
+{{ $extracted := replaceRE "(?s).*## Links\\s*(.*?)\\s*(?:(?:##|- - -).*|$)" "${1}" $content }}
+{{ $processed := markdownify $extracted }}
+{{ partial "zettel/transform-wikilinks.html" (dict "Page" .Page "Content" $processed) }}
+

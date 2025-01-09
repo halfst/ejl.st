@@ -1,4 +1,12 @@
 {{ $content := .RawContent }}
+
+{{/* Extract content section */}}
 {{ $extracted := replaceRE "(?s).*## Content\\s*(.*?)\\s*(?:(?:##|- - -).*|$)" "${1}" $content }}
-{{ $processed := markdownify $extracted }}
-{{ $processed }}
+
+{{/* First markdownify the content */}}
+{{ $markdownified := $extracted | markdownify }}
+
+{{/* Then process footnote references */}}
+{{ $processed := $markdownified | replaceRE "\\[\\^(\\d+)\\]" "<sup id=\"fnref-$1\"><a href=\"#fn-$1\">$1</a></sup>" }}
+
+{{ $processed | safeHTML }}

@@ -1,0 +1,18 @@
+{
+  "name": "ejl.st",
+  "version": "1.0.0",
+  "description": "My personal website, hosting my zettelkasten and acting as a hub for all my online activities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-graph": "node extract-links.js",
+    "build": "npm run generate-graph && hugo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,31 @@
+<!-- extract-footnotes.html -->
+{{ $content := .RawContent }}
+
+{{/* Extract the footnotes section */}}
+{{ $extracted := replaceRE "(?s).*## Footnotes\\s*(.*?)\\s*(?:(?:##|- - -).*|$)" "${1}" $content }}
+
+{{/* Process the footnotes */}}
+{{ $footnotesList := "" }}
+{{ $footnotes := split $extracted "\n" }}
+{{ range $footnotes }}
+    {{ if . }}
+        {{/* Extract just the footnote number first */}}
+        {{ $footnoteNum := replaceRE "^\\[\\^(\\d+)\\]:" "$1" . }}
+        
+        {{/* Get the footnote text */}}
+        {{ $footnoteText := replaceRE "^\\[\\^\\d+\\]:\\s*(.*)" "$1" . }}
+        
+        {{/* Process the text with markdown */}}
+        {{ $processedText := $footnoteText | markdownify }}
+        
+        {{/* Build the footnote with clean IDs */}}
+        {{ $footnote := printf "<div id=\"fn-%s\" class=\"footnote\"><sup><a href=\"#fnref-%s\">%s.</a></sup> %s <a href=\"#fnref-%s\" class=\"footnote-return\">↩</a></div>" $footnoteNum $footnoteNum $footnoteNum $processedText $footnoteNum }}
+        
+        {{ $footnotesList = printf "%s\n%s" $footnotesList $footnote }}
+    {{ end }}
+{{ end }}
+
+{{ $processedFootnotes := printf "<div class=\"footnotes\">\n%s\n</div>" $footnotesList }}
+
+{{/* Process wikilinks in footnotes */}}
+{{ partial "zettel/transform-wikilinks.html" (dict "Page" .Page "Content" $processedFootnotes) }}

@@ -1,0 +1,306 @@
+{
+  "nodes": [
+    {
+      "id": "1.1 The Purpose of Zen Buddhism is to Wake Up",
+      "title": "1.1 The Purpose of Zen Buddhism is to Wake Up"
+    },
+    {
+      "id": "1.1a Samsara is the Cycle of Suffering Encompassing Birth Death and Rebirth",
+      "title": "1.1a Samsara is the Cycle of Suffering Encompassing Birth Death and Rebirth"
+    },
+    {
+      "id": "1.1b Enlightenment is Practicing Zen Mindfulness",
+      "title": "1.1b Enlightenment is Practicing Zen Mindfulness"
+    },
+    {
+      "id": "1.1b1 Nondualism Brings Enlightenment",
+      "title": "1.1b1 Nondualism Brings Enlightenment"
+    },
+    {
+      "id": "1.1b1a As We Destroy Our Environment We Destroy Ourselves",
+      "title": "1.1b1a As We Destroy Our Environment We Destroy Ourselves"
+    },
+    {
+      "id": "1.1b2 Dualism Emphasizes Separation Between Mind and Body",
+      "title": "1.1b2 Dualism Emphasizes Separation Between Mind and Body"
+    },
+    {
+      "id": "1.1b3 Physicalism Claims All Existence is Physical",
+      "title": "1.1b3 Physicalism Claims All Existence is Physical"
+    },
+    {
+      "id": "1.1b3a Physicalism Fails to Define the Physical",
+      "title": "1.1b3a Physicalism Fails to Define the Physical"
+    },
+    {
+      "id": "1.1b3b Physicalism Fails to Explain Emotions",
+      "title": "1.1b3b Physicalism Fails to Explain Emotions"
+    },
+    {
+      "id": "1.1c We Confuse Symbols for Reality",
+      "title": "1.1c We Confuse Symbols for Reality"
+    },
+    {
+      "id": "1.2 Buddhist Temples Probably Have So Many Cats Because the Monks Don't Kill Any Mice",
+      "title": "1.2 Buddhist Temples Probably Have So Many Cats Because the Monks Don't Kill Any Mice"
+    },
+    {
+      "id": "2.1 Time is a Man-made Concept",
+      "title": "2.1 Time is a Man-made Concept"
+    },
+    {
+      "id": "2.1a The Past and Present Exist but the Future Does Not",
+      "title": "2.1a The Past and Present Exist but the Future Does Not"
+    },
+    {
+      "id": "3.1 A Zettelkasten is a Catalog of Ideas",
+      "title": "3.1 A Zettelkasten is a Catalog of Ideas"
+    },
+    {
+      "id": "4.1 Laziness does not Exist",
+      "title": "4.1 Laziness does not Exist"
+    },
+    {
+      "id": "4.1a Productive Procrastination can Improve Productivity",
+      "title": "4.1a Productive Procrastination can Improve Productivity"
+    },
+    {
+      "id": "4.1a1 Flipping Between Two or More Projects can Harness Procrastination",
+      "title": "4.1a1 Flipping Between Two or More Projects can Harness Procrastination"
+    },
+    {
+      "id": "4.1b Procrastination is due to Lower Executive Function Skills",
+      "title": "4.1b Procrastination is due to Lower Executive Function Skills"
+    },
+    {
+      "id": "4.2 People Change Constantly",
+      "title": "4.2 People Change Constantly"
+    },
+    {
+      "id": "4.2a Your Identity is a Moving Average",
+      "title": "4.2a Your Identity is a Moving Average"
+    },
+    {
+      "id": "4.2b Your Mood is Always in Motion",
+      "title": "4.2b Your Mood is Always in Motion"
+    },
+    {
+      "id": "4.3 Perception of Reality is Influenced by the Ego",
+      "title": "4.3 Perception of Reality is Influenced by the Ego"
+    },
+    {
+      "id": "4.3a Stillness of Mind Reveals True Self",
+      "title": "4.3a Stillness of Mind Reveals True Self"
+    },
+    {
+      "id": "4.4 Essentialism Means Excellence Demands Sacrifice",
+      "title": "4.4 Essentialism Means Excellence Demands Sacrifice"
+    },
+    {
+      "id": "4.4a It is Better to Build on Strengths Than Improve Weaknesses",
+      "title": "4.4a It is Better to Build on Strengths Than Improve Weaknesses"
+    },
+    {
+      "id": "5.1 The Human Brain is not a Computer",
+      "title": "5.1 The Human Brain is not a Computer"
+    },
+    {
+      "id": "5.1a Computers Can Never Have Consciousness",
+      "title": "5.1a Computers Can Never Have Consciousness"
+    },
+    {
+      "id": "5.1a1 Consciousness is not an Emergent Property of Neurons",
+      "title": "5.1a1 Consciousness is not an Emergent Property of Neurons"
+    },
+    {
+      "id": "5.2 The Brain Evolves by Building on Not Replacing Previous Structures",
+      "title": "5.2 The Brain Evolves by Building on Not Replacing Previous Structures"
+    },
+    {
+      "id": "6.1 Numbers Are More Likely to Begin with 1 2 or 3",
+      "title": "6.1 Numbers Are More Likely to Begin with 1 2 or 3"
+    },
+    {
+      "id": "7.1 The Finer the Measurement the Greater the Distance",
+      "title": "7.1 The Finer the Measurement the Greater the Distance"
+    }
+  ],
+  "links": [
+    {
+      "source": "1.1 The Purpose of Zen Buddhism is to Wake Up",
+      "target": "1.1b Enlightenment is Practicing Zen Mindfulness"
+    },
+    {
+      "source": "1.1a Samsara is the Cycle of Suffering Encompassing Birth Death and Rebirth",
+      "target": "1.1b Enlightenment is Practicing Zen Mindfulness"
+    },
+    {
+      "source": "1.1b Enlightenment is Practicing Zen Mindfulness",
+      "target": "1.1a Samsara is the Cycle of Suffering Encompassing Birth Death and Rebirth"
+    },
+    {
+      "source": "1.1b Enlightenment is Practicing Zen Mindfulness",
+      "target": "1.1 The Purpose of Zen Buddhism is to Wake Up"
+    },
+    {
+      "source": "1.1b Enlightenment is Practicing Zen Mindfulness",
+      "target": "HL-Zen-Mind-Beginners-Mind-Informal-Talks-On-Zen-Meditation-And-Practice"
+    },
+    {
+      "source": "1.1b1 Nondualism Brings Enlightenment",
+      "target": "1.1b1a As We Destroy Our Environment We Destroy Ourselves"
+    },
+    {
+      "source": "1.1b1 Nondualism Brings Enlightenment",
+      "target": "1.1b2 Dualism Emphasizes Separation Between Mind and Body"
+    },
+    {
+      "source": "1.1b1 Nondualism Brings Enlightenment",
+      "target": "HL-Understanding-Mahayana-Buddhism-The-Path-Of-The-Bodhisattva#^rw803859413"
+    },
+    {
+      "source": "1.1b1 Nondualism Brings Enlightenment",
+      "target": "HL-Alan-Watts-Philosophy-Lecture#^rw785918500"
+    },
+    {
+      "source": "1.1b1 Nondualism Brings Enlightenment",
+      "target": "HL-Alan-Watts-Random-Lectures-for-the-Hardcore-Fans#^rw761967515"
+    },
+    {
+      "source": "1.1b1 Nondualism Brings Enlightenment",
+      "target": "HL-The-Origin-of-Mitochondria#^rw803864830"
+    },
+    {
+      "source": "1.1b1a As We Destroy Our Environment We Destroy Ourselves",
+      "target": "HL-Alan-Watts-Philosophy-Lecture"
+    },
+    {
+      "source": "1.1b2 Dualism Emphasizes Separation Between Mind and Body",
+      "target": "1.1b1 Nondualism Brings Enlightenment"
+    },
+    {
+      "source": "1.1b2 Dualism Emphasizes Separation Between Mind and Body",
+      "target": "HL-Then-I-Am-Myself-the-World#^rw798552870"
+    },
+    {
+      "source": "1.1b3 Physicalism Claims All Existence is Physical",
+      "target": "1.1b2 Dualism Emphasizes Separation Between Mind and Body"
+    },
+    {
+      "source": "1.1b3 Physicalism Claims All Existence is Physical",
+      "target": "1.1b3a Physicalism Fails to Define the Physical"
+    },
+    {
+      "source": "1.1b3a Physicalism Fails to Define the Physical",
+      "target": "1.1b3 Physicalism Claims All Existence is Physical"
+    },
+    {
+      "source": "1.1b3a Physicalism Fails to Define the Physical",
+      "target": "HL-374-Consciousness-And-The-Physical-World"
+    },
+    {
+      "source": "1.1c We Confuse Symbols for Reality",
+      "target": "HL-Ep-30-Flow-Symbolic-Reality-Vs-Real-Reality#^rw790279233"
+    },
+    {
+      "source": "2.1 Time is a Man-made Concept",
+      "target": "2.1a The Past and Present Exist but the Future Does Not"
+    },
+    {
+      "source": "2.1a The Past and Present Exist but the Future Does Not",
+      "target": "2.1 Time is a Man-made Concept"
+    },
+    {
+      "source": "4.1a Productive Procrastination can Improve Productivity",
+      "target": "4.1a1 Flipping Between Two or More Projects can Harness Procrastination"
+    },
+    {
+      "source": "4.2 People Change Constantly",
+      "target": "4.2a Your Identity is a Moving Average"
+    },
+    {
+      "source": "4.2a Your Identity is a Moving Average",
+      "target": "2.1 Time is a Man-made Concept"
+    },
+    {
+      "source": "4.2a Your Identity is a Moving Average",
+      "target": "4.2 People Change Constantly"
+    },
+    {
+      "source": "4.2b Your Mood is Always in Motion",
+      "target": "4.2 People Change Constantly"
+    },
+    {
+      "source": "4.3a Stillness of Mind Reveals True Self",
+      "target": "HL-1-Relax-And-Release-Teaching-Weekend-Geneva-2019-Saturday-Part-1#^rw798349016"
+    },
+    {
+      "source": "4.4 Essentialism Means Excellence Demands Sacrifice",
+      "target": "HL-Crafting-The-Ultimate-Stoic-Routine-Morning-Rituals#^rw788288153"
+    },
+    {
+      "source": "5.1 The Human Brain is not a Computer",
+      "target": "5.1a Computers Can Never Have Consciousness"
+    },
+    {
+      "source": "5.1 The Human Brain is not a Computer",
+      "target": "5.1a Computers Can Never Have Consciousness"
+    },
+    {
+      "source": "5.1 The Human Brain is not a Computer",
+      "target": "HL-The-Neuroscience-Of-Recalling-Old-Memories"
+    },
+    {
+      "source": "5.1 The Human Brain is not a Computer",
+      "target": "HL-Your-Brain-Is-Not-A-Computer"
+    },
+    {
+      "source": "5.1a Computers Can Never Have Consciousness",
+      "target": "5.1 The Human Brain is not a Computer"
+    },
+    {
+      "source": "5.1a Computers Can Never Have Consciousness",
+      "target": "5.1a1 Consciousness is not an Emergent Property of Neurons"
+    },
+    {
+      "source": "5.1a Computers Can Never Have Consciousness",
+      "target": "HL-Then-I-Am-Myself-the-World#^rw797095574"
+    },
+    {
+      "source": "5.1a Computers Can Never Have Consciousness",
+      "target": "HL-Then-I-Am-Myself-The-World#^rw797391790"
+    },
+    {
+      "source": "5.1a Computers Can Never Have Consciousness",
+      "target": "HL-Then-I-Am-Myself-The-World#^rw796404894"
+    },
+    {
+      "source": "5.1a1 Consciousness is not an Emergent Property of Neurons",
+      "target": "HL-374-Consciousness-And-The-Physical-World#^rw791583002"
+    },
+    {
+      "source": "5.1a1 Consciousness is not an Emergent Property of Neurons",
+      "target": "HL-374-Consciousness-And-The-Physical-World#^rw786991792"
+    },
+    {
+      "source": "5.1a1 Consciousness is not an Emergent Property of Neurons",
+      "target": "HL-Then-I-Am-Myself-The-World#^rw801731471"
+    },
+    {
+      "source": "5.2 The Brain Evolves by Building on Not Replacing Previous Structures",
+      "target": "HL-The-Master-And-His-Emissary#^rw806725251"
+    },
+    {
+      "source": "6.1 Numbers Are More Likely to Begin with 1 2 or 3",
+      "target": "7.1 The Finer the Measurement the Greater the Distance"
+    },
+    {
+      "source": "6.1 Numbers Are More Likely to Begin with 1 2 or 3",
+      "target": "HL-Numbers#^rw664976573"
+    },
+    {
+      "source": "7.1 The Finer the Measurement the Greater the Distance",
+      "target": "6.1 Numbers Are More Likely to Begin with 1 2 or 3"
+    }
+  ]
+}

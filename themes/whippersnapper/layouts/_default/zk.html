@@ -2,7 +2,7 @@
 This is the ZK list page.
 
 <div class="row row-cols-1 row-cols-md-4 g-4">  
-    {{ range .Pages }}
+    {{ range where .Pages "Params.fileClass" "zettel" }}
         <div class="col">
             <div class="card text-bg-dark h-100" style="width: 18rem;">
                 <div class="card-body">
